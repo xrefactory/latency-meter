@@ -4,9 +4,8 @@
 latency-meter is a simple program to measure latency of another program
 
 latency-meter launches a command specified on command line, it connects
-to the command by two pipes and repeatedly send a one line message to
-it. latency-meter measures and displays the time until an one line answer
-comes back.
+to the command by two pipes and repeatedly sends a one line message to
+it. The time between sending and receiving is meassured and displayed.
 
 
 Install/Build
