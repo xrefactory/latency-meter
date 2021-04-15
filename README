@@ -1,0 +1,27 @@
+
+latency-meter is a simple program to measure latency of another program
+
+latency-meter launches a command specified on command line, it connects
+to the command by two pipes and repeatedly send a one line message to
+it. latency-meter measures and displays the time until an one line answer
+comes back.
+
+
+Install/Build
+
+  gcc -o latency-meter latency-meter.c
+
+Usage
+
+  latency-meter [<message>] <command>
+
+
+Examples
+
+Measure latency of cat program (together with two linux pipes):
+
+  ./latency-meter "cat"
+
+Measure latency of ssh connection to a remote computer
+
+  ./latency-meter "ssh remotehost cat"
