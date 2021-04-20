@@ -1,5 +1,6 @@
 
 latency-meter is a simple program to measure latency of another program
+or tcp/ip network connection such as ssh.
 
 latency-meter launches a command specified on command line, it connects
 to the command by two pipes and repeatedly sends a one line message to
