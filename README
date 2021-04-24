@@ -1,25 +1,24 @@
+latency-meter is a simple program originally designed for measuring latency 
+of a ssh connection. However, it is general enough to measure latency of 
+any other similar program. 
 
-latency-meter is a simple program to measure latency of another program
-or of a tcp/ip network connection such as ssh.
 
 latency-meter launches a command specified on command line, it connects
 to the command by two pipes and repeatedly sends a one line message to
 command's standard input. It expects a one line answer from it's standard 
-output. The time between sending and receiving lines is meassured and 
+output. The time between sending and receiving lines is measured and 
 displayed.
-
-
 
 
 Examples:
 
-Measure latency of cat program (together with two linux pipes):
-
-  ./latency-meter "cat"
-
-Measure latency of ssh connection to a remote computer
+Measure latency of ssh connection to a remote computer:
 
   ./latency-meter "ssh remotehost cat"
+
+Measure latency of "cat" (together with two linux pipes):
+
+  ./latency-meter "cat"
 
 
 
