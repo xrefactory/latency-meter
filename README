@@ -6,8 +6,7 @@ any other similar program.
 latency-meter launches a command specified on command line, it connects
 to the command by two pipes and repeatedly sends a one line message to
 command's standard input. It expects a one line answer from it's standard 
-output. The time between sending and receiving lines is measured and 
-displayed.
+output. The time between sending and receiving is measured.
 
 
 Examples:
