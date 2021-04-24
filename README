@@ -1,6 +1,6 @@
 
 latency-meter is a simple program to measure latency of another program
-or tcp/ip network connection such as ssh.
+or of a tcp/ip network connection such as ssh.
 
 latency-meter launches a command specified on command line, it connects
 to the command by two pipes and repeatedly sends a one line message to
@@ -9,16 +9,9 @@ output. The time between sending and receiving lines is meassured and
 displayed.
 
 
-Install/Build
-
-  gcc -o latency-meter latency-meter.c
-
-Usage
-
-  latency-meter [<message>] <command>
 
 
-Examples
+Examples:
 
 Measure latency of cat program (together with two linux pipes):
 
@@ -27,3 +20,18 @@ Measure latency of cat program (together with two linux pipes):
 Measure latency of ssh connection to a remote computer
 
   ./latency-meter "ssh remotehost cat"
+
+
+
+
+
+Install/Build:
+
+  gcc -o latency-meter latency-meter.c
+
+
+
+
+Usage:
+
+  latency-meter [<message>] <command>
